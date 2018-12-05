@@ -16,7 +16,7 @@ class App extends Component {
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then(response => {
-        //array com os dados relevantes (id, nome e email)
+        //array com os dados relevantes (id, nome, email e telefone)
         const  newContacts = response.data.map(c =>{
           return{
             id: c.id,
